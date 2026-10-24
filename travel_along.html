@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover your next escape with Wayfarer travel recommendations.">
+  <title>Wayfarer | Find Your Somewhere</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+  <header class="site-header">
+    <a class="brand" href="travel_recommendation.html" aria-label="Wayfarer home"><span class="brand-mark">✦</span> wayfarer</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="travel_recommendation.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <form class="search-form" id="searchForm" role="search">
+      <label class="sr-only" for="searchInput">Search beaches, temples or countries</label>
+      <input id="searchInput" type="search" placeholder="Beach, temple or country..." autocomplete="off">
+      <button class="btn btn-search" type="submit">Search</button>
+      <button class="btn btn-reset" type="button" id="resetButton">Reset</button>
+    </form>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="social-rail" aria-label="Social links">
+        <span></span><a href="https://www.instagram.com/" aria-label="Instagram">ig</a>
+        <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+        <a href="https://www.pinterest.com/" aria-label="Pinterest">p</a>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">A little farther. A lot more wonder.</p>
+        <h1>Find your<br><em>somewhere.</em></h1>
+        <p class="hero-copy">Thoughtful travel inspiration for the places you dream about and the moments you haven't met yet.</p>
+        <a class="btn btn-light" href="#discover">Explore recommendations <span>↗</span></a>
+      </div>
+      <div class="hero-note"><span>01 / 03</span><span>DISCOVER · WANDER · RETURN</span></div>
+    </section>
+
+    <section class="intro-section" id="discover">
+      <div>
+        <p class="eyebrow dark-eyebrow">The world, a little closer</p>
+        <h2>Go where you<br><em>feel most alive.</em></h2>
+      </div>
+      <p class="intro-copy">From salt-air coastlines to quiet sacred places, Wayfarer helps you find a destination that feels like yours. Search a theme above and let your next chapter begin.</p>
+    </section>
+
+    <section class="results-section" aria-live="polite">
+      <div class="section-heading">
+        <div><p class="eyebrow dark-eyebrow">Curated for your next escape</p><h2 id="resultsTitle">A few places to begin</h2></div>
+        <p id="resultsMessage">Search for <strong>beach</strong>, <strong>temple</strong> or <strong>country</strong>.</p>
+      </div>
+      <div class="results-grid" id="resultsGrid"></div>
+    </section>
+
+    <section class="quote-band">
+      <p>“The journey is the destination.”</p><span>MAKE ROOM FOR WONDER</span>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="travel_recommendation.html"><span class="brand-mark">✦</span> wayfarer</a><span>Made for curious souls · © 2026 Wayfarer</span><a href="contact.html">Plan something with us ↗</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>

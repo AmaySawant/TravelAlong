@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact Us | Wayfarer</title><link rel="stylesheet" href="styles.css"></head>
+<body class="sub-page">
+<header class="site-header">
+  <a class="brand" href="travel_recommendation.html"><span class="brand-mark">✦</span> wayfarer</a>
+  <nav class="main-nav centered-nav" aria-label="Main navigation"><a href="travel_recommendation.html">Home</a><a href="about.html">About Us</a><a class="active" href="contact.html">Contact Us</a></nav>
+</header>
+<main class="contact-layout">
+  <section class="contact-intro"><p class="eyebrow">Your next journey starts here</p><h1>Let's talk<br><em>travel.</em></h1><p>Have a question, an idea or a destination you think we should feature? Send us a note. We'd love to hear from you.</p><div class="contact-detail"><span>✉</span><div><small>EMAIL</small><strong>hello@wayfarer.example</strong></div></div><div class="contact-detail"><span>⌖</span><div><small>BASED IN</small><strong>Mumbai · India</strong></div></div></section>
+  <section class="contact-form-wrap"><form id="contactForm" class="contact-form">
+    <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="e.g. Taylor Smith" required>
+    <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+    <label for="message">Your message</label><textarea id="message" name="message" rows="6" placeholder="Tell us what's on your mind..." required></textarea>
+    <button class="btn btn-search submit-btn" type="submit">Send message <span>↗</span></button><p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+  </form></section>
+</main>
+<footer class="site-footer"><a class="brand" href="travel_recommendation.html"><span class="brand-mark">✦</span> wayfarer</a><span>Made for curious souls · © 2026 Wayfarer</span><a href="travel_recommendation.html">Back to exploring ↗</a></footer>
+<script>document.getElementById('contactForm').addEventListener('submit', function(event) { event.preventDefault(); document.getElementById('formFeedback').textContent = 'Thank you! Your message has been prepared. This demo form does not send email.'; this.reset(); });</script>
+</body></html>
